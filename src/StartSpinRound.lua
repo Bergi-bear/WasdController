@@ -30,6 +30,7 @@ function StartAndReleaseSpin(data, duration)
             local eff = nil
             duration=duration-TIMER_PERIOD
             BlzSetUnitFacingEx(hero, a)
+            SetUnitAnimationByIndex(hero,data.IndexAnimationSpin)
             a = a - 20
             sec = sec + TIMER_PERIOD
             if sec >= 0.1 and data.SpinCharges > 0 then

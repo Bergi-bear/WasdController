@@ -10,7 +10,7 @@ Force 1
 
 STRING 3
 {
-Just another Warcraft III map
+WasdController
 }
 
 STRING 4
@@ -25,6 +25,6 @@ Nondescript
 
 STRING 6
 {
-Unknown
+Bergi
 }
 

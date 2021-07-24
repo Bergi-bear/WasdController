@@ -43,9 +43,9 @@ function UnitAddForceSimple(hero, angle, speed, distance, flag, pushing)
             local newX, newY = MoveX(x, speed, angle), MoveY(y, speed, angle)
             local makeJump = false
             if IsUnitType(hero, UNIT_TYPE_HERO) then
-                if GetUnitData(hero).QHighJump then
-                    makeJump = true
-                end
+                --if GetUnitData(hero).QHighJump then
+                --    makeJump = true
+                --end
             end
 
             if (flag == "ignore" and GetUnitData(hero).IframesOnDash) or makeJump then
@@ -207,7 +207,7 @@ function UnitAddForceSimple(hero, angle, speed, distance, flag, pushing)
                                 -- data.CurrentWeaponType ~= "bow" then
                                 --SetUnitAnimationByIndex(data.UnitHero, IndexAnimationWalk)
                             else
-                                SetUnitAnimationByIndex(data.UnitHero, IndexAnimationWalk)
+                                SetUnitAnimationByIndex(data.UnitHero, data.IndexAnimationWalk)
                             end
                         end
                     end
